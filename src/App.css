@@ -1,0 +1,178 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px 4%;
+  background-color: #fff;
+  align-items: center;
+  gap: 4rem;
+}
+
+.navBrand {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #0290ff;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: 1px solid #ddc;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  color: #0290ff;
+  font-size: 1.8rem;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+}
+
+.progressDivider {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.percent {
+  font-size: 2rem;
+}
+
+/* book page style */
+
+.mainContainer {
+  padding: 4%;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: repeat(4, 40% 20% 20% 20%);
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  padding: 2rem;
+}
+
+.BookUL {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+.bookList {
+  list-style: none;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.crudBtn {
+  border: none;
+  background-color: #fff;
+}
+
+.progressBtn {
+  border: none;
+  background-color: #0290ff;
+  border-radius: 3px;
+  padding: 8px 24px;
+  color: #fff;
+  margin-top: 0.5rem;
+}
+
+.Vdivider {
+  width: 0.125rem;
+  height: 1.5rem;
+  background-color: #e8e8e8;
+  margin: 0 1rem;
+}
+
+.hr {
+  height: 0.12rem;
+  background-color: #e8e8e8;
+  width: 100%;
+  margin: 2.5rem 0 1.8rem;
+}
+
+/* Add Form style */
+
+.addForm {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.input {
+  padding: 0.7rem;
+  border: 1px solid #e8e8e8;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.titleInput {
+  width: 50%;
+}
+
+.AddBook {
+  padding: 0.7rem;
+  width: 20%;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: 700;
+}
+
+.authourInput {
+  width: 30%;
+}
