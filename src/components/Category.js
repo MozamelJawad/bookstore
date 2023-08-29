@@ -1,7 +1,11 @@
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { checkStatus } from '../redux/categories/categorySlice';
 
 const Category = () => {
   const { design } = useSelector((store) => store.categories);
+  const dispatch = useDispatch();
+
+  dispatch(checkStatus());
 
   const headingStyle = {
     display: 'flex',
@@ -9,6 +13,12 @@ const Category = () => {
     marginTop: '2rem',
     justifyContent: 'center',
   };
-  return <h3 style={headingStyle}>{design}</h3>;
+
+  return (
+    <>
+      <h3 style={headingStyle}>{design}</h3>
+    </>
+
+  );
 };
 export default Category;
