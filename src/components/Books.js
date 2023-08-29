@@ -1,10 +1,12 @@
-import Book from './Book';
+import BooksList from './BooksList';
 import NewBookForm from './NewBookForm';
 
 const Books = () => (
   <>
     <div className="mainContainer">
-      <Book />
+      <div className="bookContainer">
+        <BooksList />
+      </div>
 
       <div className="hr" />
       <NewBookForm />

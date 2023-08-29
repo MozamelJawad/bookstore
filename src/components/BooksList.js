@@ -1,32 +1,43 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
 
-const BooksList = (prop) => {
-  const { booksProperties } = prop;
+const BooksList = () => {
+  const dispatch = useDispatch();
+  const { books } = useSelector((store) => store.book);
   return (
     <ul className="BookUL">
-      {booksProperties.map((booksProperty) => (
-        <li key={booksProperty.id} className="bookList">
+      {books.map((book) => (
+        <li key={book.id} className="bookList">
           <div className="book">
             <div className="bookInfo">
-              <h4 className="bookCategory">{booksProperty.category}</h4>
-              <h2 className="BookTitle">{booksProperty.title}</h2>
-              <h6 className="bookAuthor">{booksProperty.author}</h6>
+              <h4 className="bookCategory">{book.category}</h4>
+              <h2 className="BookTitle">{book.title}</h2>
+              <h6 className="bookAuthor">{book.author}</h6>
               <div className="actionBtn">
                 <button type="button" className="crudBtn">Comment</button>
                 <div className="Vdivider" />
-                <button type="button" className="crudBtn">Remove</button>
+                <button
+                  type="button"
+                  className="crudBtn"
+                  onClick={() => {
+                    dispatch(removeBook(book.id));
+                  }}
+                >
+                  Remove
+                </button>
                 <div className="Vdivider" />
                 <button type="button" className="crudBtn">Edit</button>
               </div>
             </div>
             <div className="progress">
-              <p className="percent">{booksProperty.percent}</p>
+              <p className="percent">{book.percent}</p>
               <p className="completed">Completed</p>
             </div>
             <div className="progressDivider" />
             <div className="currentChapter">
               <p className="chapterLabel">Current Chapter</p>
-              <p className="chapterNumber">{booksProperty.chapter}</p>
+              <p className="chapterNumber">{book.chapter}</p>
               <button type="button" className="progressBtn">Update Progress</button>
             </div>
           </div>
