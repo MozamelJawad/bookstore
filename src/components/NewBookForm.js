@@ -34,7 +34,7 @@ const NewBookForm = () => {
           className="input titleInput"
           placeholder="Book title"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(event) => setTitle(event.target.value)}
         />
         <input
           type="text"
@@ -42,7 +42,7 @@ const NewBookForm = () => {
           className="input authourInput"
           placeholder="Author"
           value={author}
-          onChange={(e) => setAuthor(e.target.value)}
+          onChange={(event) => setAuthor(event.target.value)}
         />
         <button className="AddBook" type="submit">ADD BOOK</button>
       </form>
