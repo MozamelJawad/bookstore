@@ -1,10 +1,10 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { useSelector } from 'react-redux';
+import RemoveButton from './removeButton';
 
 const BooksList = () => {
-  const dispatch = useDispatch();
   const { books } = useSelector((store) => store.book);
+
   return (
     <ul className="BookUL">
       {books.map((book) => (
@@ -17,15 +17,7 @@ const BooksList = () => {
               <div className="actionBtn">
                 <button type="button" className="crudBtn">Comment</button>
                 <div className="Vdivider" />
-                <button
-                  type="button"
-                  className="crudBtn"
-                  onClick={() => {
-                    dispatch(removeBook(book.id));
-                  }}
-                >
-                  Remove
-                </button>
+                <RemoveButton bookId={book.id} />
                 <div className="Vdivider" />
                 <button type="button" className="crudBtn">Edit</button>
               </div>
