@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 B <a name="about-project"></a>
+# 📖 Bookstore <a name="about-project"></a>
 
 **Bookstore** is a learning SPA project in Microverse, this project is developed using React and it is used a CMS for bookstore.
 
