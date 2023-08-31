@@ -25,7 +25,7 @@ const NewBookForm = () => {
           value={author}
           onChange={(event) => setAuthor(event.target.value)}
         />
-        <AddButton author={author} title={title} />
+        <AddButton setAuthor={setAuthor} setTitle={setTitle} author={author} title={title} />
       </form>
     </section>
   );

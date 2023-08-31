@@ -3,20 +3,22 @@ import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/booksSlice';
 
 const AddButton = (prop) => {
-  const { title, author } = prop;
+  const {
+    title, author, setAuthor, setTitle,
+  } = prop;
   const dispatch = useDispatch();
 
   const handleBookAdding = () => {
     const newBook = {
-      id: Math.floor(Math.random() * 100),
+      item_id: Math.floor(Math.random() * 10000),
       title,
       author,
       category: 'Economy',
-      percent: '50%',
-      chapter: 'Chapter Five: Introduction',
     };
 
     dispatch(addBook(newBook));
+    setAuthor('');
+    setTitle('');
   };
 
   return (
