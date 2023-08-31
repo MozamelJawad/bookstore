@@ -8,7 +8,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-    - [Live Demo](#live-demo)
+    <!-- - [Live Demo](#live-demo) -->
     - [Key Features](#key-features)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -39,11 +39,8 @@
     <li>Node.js</li>
 </ul>
 
-## 🚀 Live Demo <a name="live-demo"></a>
+<!-- ## 🚀 Live Demo <a name="live-demo"></a> -->
 
-- 
-
-##
 
 <!-- Features -->
 
