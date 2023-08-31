@@ -9,7 +9,7 @@
 #root {
   padding: 0 0 8%;
   border-radius: 4px;
-  box-shadow: 0 0 60px 0 rgba(0,0,0,.05);
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
   background-color: #fafafa;
 }
 
@@ -31,13 +31,13 @@ body {
   text-decoration: none;
   color: #0290ff;
   font-size: 1.875rem;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
 
 .navTab {
   color: #121212;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
 }
@@ -98,7 +98,7 @@ body {
 
 .percent,
 .completed {
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #121212;
 }
 
@@ -107,12 +107,12 @@ body {
 }
 
 .completed {
-  font-size: .875rem;
-  opacity: .5;
+  font-size: 0.875rem;
+  opacity: 0.5;
 }
 
 .chapterLabel {
-  font-family: "RobotoSlab",serif;
+  font-family: "RobotoSlab", serif;
   font-weight: 300;
   color: #121212;
   font-size: 0.813rem;
@@ -123,7 +123,7 @@ body {
   margin-top: 0.438rem;
   font-size: 1rem;
   letter-spacing: -0.4px;
-  font-family: "RobotoSlab",serif;
+  font-family: "RobotoSlab", serif;
   font-weight: 300;
   color: #121212;
 }
@@ -181,7 +181,7 @@ button {
   height: 4.25rem;
   border-radius: 50%;
   border: 5px solid #307bbe;
-  border-left-color:#e8e8e8;
+  border-left-color: #e8e8e8;
   transform: rotate(45deg);
 }
 
@@ -191,7 +191,7 @@ button {
   color: #fff;
   border-radius: 3px;
   padding: 8px 24px;
-  font-family: "Roboto Slab",serif;
+  font-family: "Roboto Slab", serif;
   font-weight: 400;
   margin-top: 1rem;
 }
@@ -213,7 +213,7 @@ button {
 /* Add Form style */
 
 .formTitle {
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: -0.18px;
@@ -233,7 +233,7 @@ button {
   font-size: 1rem;
   background-color: #fff;
   border-radius: 4px;
-  letter-spacing: -.15px;
+  letter-spacing: -0.15px;
   color: #121212;
 }
 
@@ -250,7 +250,7 @@ button {
   color: #fff;
   font-size: 0.813rem;
   font-weight: 700;
-  font-family: "RobotoSlab",serif;
+  font-family: "RobotoSlab", serif;
   background-color: #0290ff;
 }
 
@@ -267,7 +267,7 @@ button {
 
 .bookAuthor {
   font-size: 0.8rem;
-  font-family: "RobotoSlab",serif;
+  font-family: "RobotoSlab", serif;
   color: #4386bf;
   margin: 0.25rem 0 0;
   font-weight: 300;
