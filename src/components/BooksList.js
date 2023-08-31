@@ -23,7 +23,7 @@ const BooksList = () => {
         <li key={book.id} className="bookList">
           <div className="book">
             <div className="bookInfo">
-              <h4 className="bookCategory">{book.category}</h4>
+              <h4 className="category">{book.category}</h4>
               <h2 className="BookTitle">{book.title}</h2>
               <h6 className="bookAuthor">
                 {book.author}
@@ -36,6 +36,7 @@ const BooksList = () => {
                 <button type="button" className="crudBtn">Edit</button>
               </div>
             </div>
+            <div className="progressBar" />
             <div className="progress">
               <p className="percent">
                 {Math.floor(Math.random() * 100)}
@@ -45,13 +46,13 @@ const BooksList = () => {
             </div>
             <div className="progressDivider" />
             <div className="currentChapter">
-              <p className="chapterLabel">Current Chapter</p>
+              <p className="chapterLabel">CURRENT CHAPTER</p>
               <p className="chapterNumber">
                 <span>Chapter: </span>
                 {Math.floor(Math.random() * 10 + 1)}
                 <span> Introduction</span>
               </p>
-              <button type="button" className="progressBtn">Update Progress</button>
+              <button type="button" className="progressBtn">UPDATE PROGRESS</button>
             </div>
           </div>
         </li>
